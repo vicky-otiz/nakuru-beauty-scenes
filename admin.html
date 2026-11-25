@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Nakuru Beauty Scenes</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #17233b;
+}
+
+header {
+  background: #071a35;
+  color: white;
+  padding: 22px;
+  border-bottom: 4px solid #d4af37;
+}
+
+header h1 {
+  color: #e0bd55;
+  font-size: 23px;
+}
+
+header p {
+  margin-top: 7px;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+h2 {
+  margin-bottom: 18px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #d4af37;
+  box-shadow: 0 3px 10px #0000000c;
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  color: #687386;
+  margin-bottom: 12px;
+}
+
+.stat-card p {
+  font-size: 27px;
+  font-weight: bold;
+  color: #071a35;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px #0000000c;
+}
+
+.panel h2 {
+  font-size: 19px;
+  color: #071a35;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 13px 9px;
+  border-bottom: 1px solid #e6e9ef;
+  text-align: left;
+  font-size: 13px;
+}
+
+th {
+  background: #f0f3f8;
+}
+
+.status {
+  color: #b17a00;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  padding: 9px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.approve {
+  background: #d4af37;
+  color: #071a35;
+}
+
+.reject {
+  background: #fbe5e5;
+  color: #a32626;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #071a35;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.notice {
+  background: #fff8df;
+  border-left: 4px solid #d4af37;
+  padding: 13px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>NAKURU BEAUTY SCENES</h1>
+  <p>Administration Dashboard</p>
+</header>
+
+<div class="container">
+
+<a class="back" href="index.html">← Back to Website</a>
+
+<h2>Dashboard Overview</h2>
+
+<div class="stats">
+  <div class="stat-card">
+    <h3>Total Events</h3>
+    <p>03</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>Pending Approval</h3>
+    <p>02</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>Organisers</h3>
+    <p>05</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>Published Events</h3>
+    <p>01</p>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Event Approval Management</h2>
+
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Miss Nakuru 2026</td>
+        <td>Beauty Pageant</td>
+        <td class="status">Pending</td>
+        <td>
+          <button class="approve" onclick="demoAction('approved')">Approve</button>
+          <button class="reject" onclick="demoAction('rejected')">Reject</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Kenya Fashion Showcase</td>
+        <td>Fashion Show</td>
+        <td class="status">Pending</td>
+        <td>
+          <button class="approve" onclick="demoAction('approved')">Approve</button>
+          <button class="reject" onclick="demoAction('rejected')">Reject</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="notice">
+    Demonstration dashboard: the displayed numbers and events are sample data.
+    Approval buttons do not publish or reject real events yet.
+    Database integration and administrator authentication are still required.
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Admin Management</h2>
+  <p>Future features:</p>
+  <ul style="padding: 15px 20px; line-height: 2;">
+    <li>Manage registered organisers</li>
+    <li>Publish and edit events</li>
+    <li>Manage ticket sales</li>
+    <li>View platform reports</li>
+    <li>Manage website content</li>
+  </ul>
+</div>
+
+</div>
+
+<footer style="background:#071a35;color:white;text-align:center;padding:20px;">
+  © 2026 Nakuru Beauty Scenes. Admin Panel.
+</footer>
+
+<script>
+function demoAction(action) {
+  alert("Demo only: Event " + action +
+    ". Real approval will be activated after database integration.");
+}
+</script>
+
+</body>
+</html>
