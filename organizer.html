@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organiser Registration | Nakuru Beauty Scenes</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #101c36;
+}
+
+header {
+  background: #101c36;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+header span {
+  color: #d4af37;
+}
+
+nav {
+  background: white;
+  padding: 16px;
+  text-align: center;
+}
+
+nav a {
+  color: #101c36;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 550px;
+  margin: 35px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  color: #667085;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  margin-top: 7px;
+  border: 1px solid #ccd1dc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  background: #d4af37;
+  color: #101c36;
+  border: none;
+  padding: 15px;
+  margin-top: 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.notice {
+  background: #fff8df;
+  padding: 13px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #665016;
+  margin-top: 20px;
+}
+
+footer {
+  background: #101c36;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>NAKURU <span>BEAUTY SCENES</span></h2>
+<p style="color:white">Event Organiser Registration</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+</nav>
+
+<div class="container">
+
+<h2>Become an Event Organiser</h2>
+
+<p>Register your organisation and bring your events to Kenya.</p>
+
+<form id="organizerForm">
+
+<label>Organisation Name</label>
+<input type="text" name="organisation" placeholder="Enter organisation name" required>
+
+<label>Contact Person</label>
+<input type="text" name="contact" placeholder="Your full name" required>
+
+<label>Email Address</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" placeholder="+254 7XX XXX XXX" required>
+
+<label>County</label>
+<select name="county" required>
+<option value="">Select your county</option>
+<option>Nakuru</option>
+<option>Nairobi</option>
+<option>Uasin Gishu</option>
+<option>Kiambu</option>
+<option>Mombasa</option>
+<option>Kisumu</option>
+<option>Other</option>
+</select>
+
+<label>Type of Events</label>
+<select name="eventType" required>
+<option value="">Choose event category</option>
+<option>Beauty Pageants</option>
+<option>Modelling Shows</option>
+<option>Fashion Shows</option>
+<option>Talent Competitions</option>
+<option>Entertainment</option>
+<option>Other</option>
+</select>
+
+<label>About Your Organisation</label>
+<textarea name="about" rows="4" placeholder="Tell us about your organisation"></textarea>
+
+<button type="submit">REGISTER AS ORGANISER</button>
+
+</form>
+
+<div class="notice">
+<strong>Important:</strong> Organiser registration and event submissions are subject to Nakuru Beauty Scenes administrator approval.
+</div>
+
+</div>
+
+<footer>
+<p style="color:white">© 2026 Nakuru Beauty Scenes. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("organizerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Registration form preview successful! Online submission will be activated after database integration.");
+});
+</script>
+
+</body>
+</html>
