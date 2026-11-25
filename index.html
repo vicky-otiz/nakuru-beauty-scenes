@@ -2,97 +2,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nakuru Beauty Scenes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nakuru Beauty Scenes | Events & Entertainment</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-        }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        header {
-            background: #101828;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f8fc;
+  color: #101c36;
+}
 
-        nav {
-            background: #ffffff;
-            padding: 15px;
-            text-align: center;
-        }
+header {
+  background: #101c36;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-        nav a {
-            margin: 10px;
-            color: #101828;
-            text-decoration: none;
-            font-weight: bold;
-        }
+header span {
+  color: #d4af37;
+}
 
-        .hero {
-            background: #172554;
-            color: white;
-            padding: 65px 20px;
-            text-align: center;
-        }
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 18px;
+  background: white;
+}
 
-        .hero button {
-            background: #eab308;
-            border: none;
-            padding: 14px 25px;
-            border-radius: 6px;
-            font-weight: bold;
-        }
+nav a {
+  text-decoration: none;
+  color: #101c36;
+  font-weight: bold;
+}
 
-        .events {
-            padding: 25px;
-            text-align: center;
-        }
+.hero {
+  background: #101c36;
+  color: white;
+  text-align: center;
+  padding: 75px 20px;
+}
 
-        footer {
-            background: #101828;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+.hero h1 {
+  font-size: 38px;
+}
+
+.hero span {
+  color: #d4af37;
+}
+
+.btn {
+  display: inline-block;
+  background: #d4af37;
+  color: #101c36;
+  padding: 14px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+section {
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.event-card h3 {
+  color: #101c36;
+}
+
+.event-card a {
+  color: #9b7714;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background: #101c36;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer span {
+  color: #d4af37;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>NAKURU BEAUTY SCENES</h1>
-    <p>Kenya's Modelling & Entertainment Platform</p>
+<h1>NAKURU <span>BEAUTY SCENES</span></h1>
+<p>Kenya's Modelling & Entertainment Platform</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#events">Events</a>
-    <a href="#">Tickets</a>
-    <a href="#">About</a>
-    <a href="#">Login</a>
+<a href="#">Home</a>
+<a href="#events">Events</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#">Login</a>
 </nav>
 
-<section class="hero">
-    <h1>Discover. Shine. Celebrate.</h1>
-    <p>Discover modelling competitions and entertainment events across Kenya.</p>
-    <button>Explore Events</button>
+<div class="hero">
+<h1>Discover. <span>Shine.</span> Celebrate.</h1>
+<p>Your destination for beauty competitions, modelling and entertainment across Kenya.</p>
+<a href="#events" class="btn">EXPLORE EVENTS</a>
+</div>
+
+<section id="events">
+<h2>Upcoming Events</h2>
+<p>Discover exciting events happening across Kenya.</p>
+
+<div class="events">
+
+<div class="event-card">
+<h3>Beauty Pageants</h3>
+<p>Discover beauty competitions and talent across Kenya.</p>
+<a href="#">Explore Events →</a>
+</div>
+
+<div class="event-card">
+<h3>Modelling Shows</h3>
+<p>Experience fashion, creativity and modelling showcases.</p>
+<a href="#">Explore Shows →</a>
+</div>
+
+<div class="event-card">
+<h3>Entertainment</h3>
+<p>Discover concerts, performances and special occasions.</p>
+<a href="#">Explore Events →</a>
+</div>
+
+</div>
 </section>
 
-<section class="events" id="events">
-    <h2>Upcoming Events</h2>
-    <p>Exciting beauty and modelling events are coming soon.</p>
+<section id="about">
+<h2>About Us</h2>
+<p>Nakuru Beauty Scenes connects people with modelling, beauty and entertainment events throughout Kenya.</p>
 </section>
 
-<footer>
-    <p>© 2026 Nakuru Beauty Scenes</p>
-    <p>All Rights Reserved.</p>
+<footer id="contact">
+<h3><span>NAKURU BEAUTY SCENES</span></h3>
+<p>Discover events. Celebrate talent.</p>
+<p>© 2026 Nakuru Beauty Scenes. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
+
