@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit an Event | Nakuru Beauty Scenes</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f5f8;
+      color: #17233b;
+    }
+
+    header {
+      background: #071a35;
+      color: white;
+      padding: 22px 15px;
+      text-align: center;
+      border-bottom: 4px solid #d4af37;
+    }
+
+    header h1 {
+      color: #e0bd55;
+      font-size: 25px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    nav {
+      background: #10294b;
+      padding: 13px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px #00000012;
+    }
+
+    h2 {
+      color: #071a35;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      color: #666;
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 16px 0 7px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccd2dc;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 14px;
+      background: #d4af37;
+      color: #071a35;
+      border: none;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #c39b25;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 12px;
+      background: #fff8df;
+      border-left: 4px solid #d4af37;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #071a35;
+      color: white;
+      margin-top: 35px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>NAKURU BEAUTY SCENES</h1>
+  <p>Kenya's Home of Beauty, Fashion & Talent</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="events.html">Events</a>
+  <a href="organizer.html">Organisers</a>
+</nav>
+
+<div class="container">
+  <h2>Submit Your Event</h2>
+
+  <p class="intro">
+    Are you organising a beauty pageant, fashion show,
+    modelling competition or talent event? Submit your
+    event for review by the Nakuru Beauty Scenes team.
+  </p>
+
+  <form id="eventForm">
+
+    <label>Event Name</label>
+    <input type="text" required placeholder="Enter event name">
+
+    <label>Event Category</label>
+    <select required>
+      <option value="">Select category</option>
+      <option>Beauty Pageant</option>
+      <option>Fashion Show</option>
+      <option>Modelling Competition</option>
+      <option>Talent Competition</option>
+      <option>Other</option>
+    </select>
+
+    <label>Event Date</label>
+    <input type="date" required>
+
+    <label>County</label>
+    <select required>
+      <option value="">Select county</option>
+      <option>Nakuru</option>
+      <option>Nairobi</option>
+      <option>Kiambu</option>
+      <option>Mombasa</option>
+      <option>Kisumu</option>
+      <option>Uasin Gishu</option>
+      <option>Other county</option>
+    </select>
+
+    <label>Venue</label>
+    <input type="text" required placeholder="Event venue">
+
+    <label>Ticket Price (KSh)</label>
+    <input type="number" min="0" placeholder="e.g. 500">
+
+    <label>Event Poster Image URL</label>
+    <input type="url" placeholder="Paste poster image link">
+
+    <label>Event Description</label>
+    <textarea required placeholder="Tell us about your event"></textarea>
+
+    <label>Organiser Email</label>
+    <input type="email" required placeholder="Enter your email">
+
+    <label>Organiser Phone Number</label>
+    <input type="tel" required placeholder="e.g. 07XXXXXXXX">
+
+    <button type="submit">Submit Event for Approval</button>
+
+  </form>
+
+  <div class="notice">
+    <strong>Important:</strong> Submitting an event does not
+    publish it automatically. Events will require admin approval.
+    This is currently a demonstration form; online submissions
+    are not yet stored or sent to the admin.
+  </div>
+</div>
+
+<footer>
+  © 2026 Nakuru Beauty Scenes. All Rights Reserved.
+</footer>
+
+<script>
+  document.getElementById("eventForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Demo successful! Online event submission will be activated after database integration.");
+  });
+</script>
+
+</body>
+</html>
